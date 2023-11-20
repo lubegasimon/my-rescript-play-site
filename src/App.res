@@ -1,3 +1,11 @@
+module Div = %styled.div(`
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline dotted red;`)
+
 @react.component
 let make = () => {
   let (count, setCount) = React.useState(() => 0)
@@ -16,5 +24,9 @@ let make = () => {
       <code> {React.string("src/App.res")} </code>
       {React.string(" and save to test Fast Refresh.")}
     </p>
+    <Div>
+      {React.string ("This is styled-ppx example")}
+   </Div>
   </div>
+
 }
