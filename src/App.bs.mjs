@@ -30,7 +30,8 @@ var styles = CssJs.style([
       CssJs.display("flex"),
       CssJs.alignItems("center"),
       CssJs.justifyContent("center"),
-      CssJs.textDecoration("underline")
+      CssJs.textDecoration("lineThrough"),
+      CssJs.unsafe("lineBreak", "loose")
     ]);
 
 function make(props) {

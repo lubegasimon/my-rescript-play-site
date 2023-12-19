@@ -4,7 +4,8 @@ module Div = %styled.div(`
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: underline dotted red;`)
+  text-decoration: line-through;
+  line-break: loose`)
 
 @react.component
 let make = () => {
